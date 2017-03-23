@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Process Name="MVVM" Enabled="false">
+    <CopyPaths>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Librerie condivise\GalaSoft.MvvmLight.dll</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Librerie condivise\GalaSoft.MvvmLight.Extras.dll</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Librerie condivise\GalaSoft.MvvmLight.Extras.xml</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Librerie condivise\GalaSoft.MvvmLight.xml</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Librerie condivise\System.Windows.Interactivity.dll</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Librerie condivise\System.Windows.Interactivity.xml</Path>
+    </CopyPaths>
+    <ScanPaths>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Commons</Path>
+    </ScanPaths>
+    <DestPaths>
+      <Path>Librerie Esterne</Path>
+    </DestPaths>
+    <ExcludedPaths />
+  </Process>
+  <Process Name="to librerie condivise" Enabled="true">
+    <CopyPaths>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Commons\Bin\Copenhagen.Commons.dll</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Commons\Bin\Copenhagen.Commons.pdb</Path>
+    </CopyPaths>
+    <ScanPaths>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen</Path>
+    </ScanPaths>
+    <DestPaths>
+      <Path>Librerie condivise</Path>
+    </DestPaths>
+    <ExcludedPaths>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Calendar WinForm</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Commons</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\CronExpressionDescriptor</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\DA TRUNK</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Documenti</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\ECP</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\ICCS.Commons</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\IHM</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Interfacce ICDD</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\MetroRiyadh</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\PAProtocol</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\SchedulerSRV</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\SMS</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\TetSistemi.Commons</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\VALE</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\WinFormsUI</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\CliTasksTableBIN_create.sql</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\CliTasksTableXML_create.sql</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\copy.cpf</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\CR-ASTS-201001 - 00.00b Requirements Traceability Matrix.xls</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\Quartz.docx</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\SVNLOG.bat</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\tables_sqlServer.sql</Path>
+    </ExcludedPaths>
+  </Process>
+</Root>

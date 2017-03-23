@@ -1,0 +1,758 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Copenhagen.Commons</name>
+    </assembly>
+    <members>
+        <member name="M:Copenhagen.Commons.Helpers.Extensions.Slice(System.String,System.Int32,System.Int32)">
+            <summary>
+                Get the string slice between the two indexes.
+                Inclusive for start index, exclusive for end index.
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Helpers.Misc.CheckEquals``1(``0,System.Object)">
+            <summary>
+                Checks equality between two generic objects
+            </summary>
+            <typeparam name="T"> </typeparam>
+            <param name="obj"> </param>
+            <param name="objcomp"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:Copenhagen.Commons.Helpers.Misc.DisplayString(System.Object,System.String,System.Int32)">
+            <summary>
+                Create a textual representation of an object
+            </summary>
+            <param name="obj"> Object to textualize </param>
+            <param name="indent"> Current indent level </param>
+            <param name="name"> Name of the object </param>
+            <returns> The string representing the object </returns>
+        </member>
+        <member name="M:Copenhagen.Commons.Helpers.Regex.WCard2Regex(System.String,System.Boolean)">
+            <summary>
+                Return a Regex object from a string with wildcards
+            </summary>
+            <param name="pattern"> </param>
+            <param name="ignorecase"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:Copenhagen.Commons.Helpers.Regex.RegexComplexity(System.Text.RegularExpressions.Regex)">
+            <summary>
+                Evaluates complexity of a Regex
+            </summary>
+            <param name="pattern"> string representing the regex </param>
+            <returns> </returns>
+        </member>
+        <member name="T:Copenhagen.Commons.Helpers.SerializerInfo">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Helpers.SerializerInfo.RegisterBatch(System.Collections.Generic.IEnumerable{System.Type},System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">
+            <summary>
+                Registers all the types derived from a based type searching in a collection of assemblies
+            </summary>
+            <param name="baseType"> The base type of the types that should be registered </param>
+            <param name="assemblies"> </param>
+            <returns> </returns>
+        </member>
+        <member name="T:Copenhagen.Commons.Helpers.TypesLoader">
+            <summary>
+                Helper static class that uses reflection to load all instances of a given type
+                scanning the referenced assemblies, and stores them in a dictionary
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Helpers.TypesLoader.GetNonSysAssemblies(System.Boolean)">
+            <summary>
+                Retrieves a collection of non system assemblies referenced by the current app domain
+            </summary>
+            <param name="rescan"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:Copenhagen.Commons.Helpers.TypesLoader.GetType(System.String,System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Boolean)">
+            <summary>
+                Retrieves a type by type name searching in the app domain assemblies or in a collection of assemblies passed
+            </summary>
+            <param name="typeName"> the typename to search, can be either the type's fullname or the assemblyqualified name </param>
+            <param name="assemblies"> list of assemblies to search into, defaults to current app domain's assemblies </param>
+            <param name="onlyNonSysAssemblies"> if true the search is performed only on non system assemblies </param>
+            <returns> </returns>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1">
+            <summary>
+                Classe base per l'implementazione di un Client in un dato protocollo
+            </summary>
+            <typeparam name="TSrvParser"> Rappresenta il message parser nel protocollo specifico per interpretare i messaggi del server </typeparam>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.SendMessage(TetSistemi.Commons.Protocol.IMessage)">
+            <summary>
+                Invia un <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> al server
+            </summary>
+            <param name="imsg">
+                <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> da inviare
+            </param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.CreateClientTcp">
+            <summary>
+                Crea un nuovo TcpClient, cabla gli eventi ed abilita la connessione
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.CreateClientTcp(System.Boolean)">
+            <summary>
+                Crea un nuovo TcpClient, cabla gli eventi ed abilita la connessione
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.CreateClientTcp(System.String,System.String,System.String,System.String)">
+            <summary>
+                Crea un nuovo TcpClient, cabla gli eventi ed abilita la connessione
+            </summary>
+            <param name="_ip">IP del server</param>
+            <param name="_port">Porta del server</param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.DisposeClientTcp">
+            <summary>
+                Distrugge il TcpClient
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.AnswerToMessage">
+            <summary>
+                Evento lanciato in risposta ad un messaggio lato server; il delegate associato prende in input
+                l'<see cref="T:TetSistemi.Commons.Protocol.IMessage"/> dal server e deve ritornare l'<see cref="T:TetSistemi.Commons.Protocol.IMessage"/> di risposta
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.OnSendMessage">
+            <summary>
+                Evento all'invio di un <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> verso i lserver
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.OnSendMessageAsync">
+            <summary>
+                Evento lanciato all'invio di un messaggio asincrono
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.OnSendMessageSync">
+            <summary>
+                Evento lanciato all'invio di un messaggio sincrono
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.OnConnect">
+            <summary>
+                Evento lanciato all'avvenuta connessione
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.OnDisConnect">
+            <summary>
+                Evento lanciato all'avvenuta disconnessione
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.OnCreateClient">
+            <summary>
+                Evento lanciato alla creazione del client TCP
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseRedundantClient`1.OnDisposeClientTcp">
+            <summary>
+                Evento lanciato alla distruzione del client TCP
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Bin.ABaseClient`1">
+            <summary>
+                Classe base per l'implementazione di un Client in un dato protocollo
+            </summary>
+            <typeparam name="TSrvParser"> Rappresenta il message parser nel protocollo specifico per interpretare i messaggi del server </typeparam>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseClient`1.SendMessage(TetSistemi.Commons.Protocol.IMessage)">
+            <summary>
+                Invia un <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> al server
+            </summary>
+            <param name="imsg">
+                <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> da inviare
+            </param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseClient`1.CreateClientTcp">
+            <summary>
+                Crea un nuovo TcpClient, cabla gli eventi ed abilita la connessione
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseClient`1.CreateClientTcp(System.String,System.String)">
+            <summary>
+                Crea un nuovo TcpClient, cabla gli eventi ed abilita la connessione
+            </summary>
+            <param name="_ip">IP del server</param>
+            <param name="_port">Porta del server</param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseClient`1.DisposeClientTcp">
+            <summary>
+                Distrugge il TcpClient
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnAnswerToMessage">
+            <summary>
+                Evento lanciato in risposta ad un messaggio lato server; il delegate associato prende in input
+                l'<see cref="T:TetSistemi.Commons.Protocol.IMessage"/> dal server e deve ritornare l'<see cref="T:TetSistemi.Commons.Protocol.IMessage"/> di risposta
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnSendMessage">
+            <summary>
+                Evento all'invio di un <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> verso i lserver
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnSendMessageAsync">
+            <summary>
+                Evento lanciato all'invio di un messaggio asincrono
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnSendMessageSync">
+            <summary>
+                Evento lanciato all'invio di un messaggio sincrono
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnConnect">
+            <summary>
+                Evento lanciato all'avvenuta connessione
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnDisConnect">
+            <summary>
+                Evento lanciato all'avvenuta disconnessione
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnConnectFailure">
+            <summary>
+                Evento lanciato in caso di fallimento della connessione
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnCreateClientTcp">
+            <summary>
+                Evento lanciato alla creazione del client TCP
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnDisposeClientTcp">
+            <summary>
+                Evento lanciato alla distruzione del client TCP
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnStreamParseError">
+            <summary>
+                Evento lanciato in caso di un'eccezione generica lanciata dallo streamparser
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.OnMessageParseError">
+            <summary>
+                Evento lanciato in caso di errore di parsing di un IMessage
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.MessageReceived">
+            <summary>
+                Evento lanciato quando lo streamparser riceve un IMessage
+                Va inserito nell'implementazione del OnTcpClientCreate
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseClient`1.DataReceived">
+            <summary>
+                Evento lanciato quando il TcpClient riceve un byte[]
+                Va inserito nell'implementazione del OnTcpClientCreate
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Bin.ABaseConnection">
+            <summary>
+                Classe base per l'implementazione di una Server Connection in un generico protocollo
+            </summary>
+        </member>
+        <member name="F:Copenhagen.Commons.Net.Bin.ABaseConnection.inparser">
+            <summary>
+                da inizializzare nella classe derivata
+            </summary>
+        </member>
+        <member name="F:Copenhagen.Commons.Net.Bin.ABaseConnection.outparser">
+            <summary>
+                da inizializzare nella classe derivata
+            </summary>
+        </member>
+        <member name="F:Copenhagen.Commons.Net.Bin.ABaseConnection.sp">
+            <summary>
+                da inizializzare nella classe derivata
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseConnection.SetConnection(TetSistemi.Commons.Net.Sockets.TcpServerConnection,TetSistemi.Commons.Protocol.IMessageParser,System.Action{System.String})">
+            <summary>
+                Imposta una nuova connessione tcp, non puo` essere nulll
+            </summary>
+            <param name="conn"> La nuova connessione </param>
+            <param name="parser"> Il nuovo message parser, se null non viene riassegnato </param>
+            <param name="strAct">
+                Inizializza la <seealso cref="P:Copenhagen.Commons.Net.Bin.ABaseConnection.LogAction"/>
+            </param>
+            <exception cref="T:System.NullReferenceException">Lanciata se la connessione passata per argomento e` null</exception>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseConnection.Dispose">
+            <summary>
+                Libera le risorse associate all'oggetto
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseConnection.Send(TetSistemi.Commons.Protocol.IMessage)">
+            <summary>
+                Invia un IMessage
+            </summary>
+            <param name="msg"> </param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseConnection.SendSync(TetSistemi.Commons.Protocol.IMessage,System.Collections.Generic.List{TetSistemi.Commons.Protocol.IMessage}@,System.Collections.Generic.List{TetSistemi.Commons.Protocol.MessageValidationException}@)">
+            <summary>
+                Invia un <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> sincrono
+            </summary>
+            <param name="msg">Messaggio da inviare al client</param>
+            <param name="msgOut">Dopo la chiamata al metodo in caso di buon fine contiene il/i messaggi di risposta</param>
+            <param name="vEx">Dopo la chiamata al metodo in caso di errore contiene la/le eccezioni lanciate dal client</param>
+            <returns>
+                Risultato della chiamata sincrona, <seealso cref="T:TetSistemi.Commons.Protocol.SyncResult"/>
+            </returns>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseConnection.SendAsync(TetSistemi.Commons.Protocol.IMessage,TetSistemi.Commons.Protocol.dAsyncCallback,System.Object)">
+            <summary>
+                Invia un <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> asincrono
+            </summary>
+            <param name="msg">Messaggio da inviare al client</param>
+            <param name="callback">delegate chiamato alla ricezione della risposta</param>
+            <param name="extra">
+                Parametro/i da passare a <paramref name="callback"/>
+            </param>
+            <returns>
+                Risultato della chiamata asincrona, <seealso cref="T:TetSistemi.Commons.Protocol.ASyncResult"/>
+            </returns>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseConnection.BeginReceive">
+            <summary>
+                Avvia la ricezione di nuovi messaggi
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Bin.ABaseConnection.Connection">
+            <summary>
+                Restituisce la connessione
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Bin.ABaseConnection.Inparser">
+            <summary>
+                da inizializzare nella classe derivata
+                una volta inizializzato viene creato in automatico lo streamparser
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Bin.ABaseConnection.Trace">
+            <summary>
+                Abilita o disabilita il trace
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Bin.ABaseConnection.LogAction">
+            <summary>
+                Permette di impostare un metodo custom che accetti come parametro una stringa (metodo di log)
+                Viene invocato dagli eventi relativi agli IMessage per visualizzare il messaggio in formato testuale
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseConnection.OnTrace">
+            <summary>
+                Permette di specificare uno o piu` metodi custom richiamati quando viene sollevato l'evento di trace
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseConnection.OnMessageReceived">
+            <summary>
+                Permette di specificare uno o piu` metodi custom richiamati quando viene ricevuto un IMessage
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseConnection.OnDataReceived">
+            <summary>
+                Permette di specificare uno o piu` metodi custom richiamati quando viene sollevato l'evento di trace
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseConnection.OnAnswerToMsgStatic">
+            <summary>
+                Evento statico lanciato alla ricezione di un IMessage
+            </summary>
+            <remarks>
+                E` statico in quanto deve essere condiviso da tutte le connessioni ed accessibile sia da
+                <seealso cref="!:ABaseServer"/>
+                che da <seealso cref="!:ServerViewModel&lt;TServer,TConnection,TCliParser&gt;"/>
+            </remarks>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseConnection.OnAnswerToMsg">
+            <summary>
+                Evento lanciato alla ricezione di un IMessage
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Bin.ABaseServer`2">
+            <summary>
+                Classe base per l'implementazione di un Server per un generico protocollo
+            </summary>
+            <typeparam name="TConnection"> Rappresenta l'implementazione della server connection nel protocollo specifico </typeparam>
+            <typeparam name="TMessageParser"> Rappresenta il message parser nel protocollo specifico per interpretare i messaggi del server </typeparam>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.#ctor(System.Net.IPAddress,System.Int32,System.Action{System.String})">
+            <summary>
+                Inizializza un nuovo Server.
+            </summary>
+            <param name="localip"> Indirizzo IP locale </param>
+            <param name="port"> Porta di ascolto locale </param>
+            <param name="strAct"> Metodo di log da associare alle connection </param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.Add(TetSistemi.Commons.Net.Sockets.TcpServerConnection)">
+            <summary>
+                Aggiunge una connessione al server
+            </summary>
+            <param name="conn">
+                <c>TcpServerConnection</c> da aggiungere al server
+            </param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.Add(`0)">
+            <summary>
+                Aggiunge una connessione al server
+            </summary>
+            <param name="psc">
+                <c>Connection</c> da aggiungere al server
+            </param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.Remove(TetSistemi.Commons.Net.Sockets.TcpServerConnection)">
+            <summary>
+                Rimuove una connessione dal server
+            </summary>
+            <param name="conn">
+                <c>TcpServerConnection</c> da rimuovere dal server
+            </param>
+            <remarks>
+                Viene chiamato <c>Dispose</c> sulla <c>Connection</c> relativa alla connessione specificata
+            </remarks>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.Remove(`0)">
+            <summary>
+                Aggiunge una connessione al server
+            </summary>
+            <param name="psc">
+                <c>Connection</c> da aggiungere al server
+            </param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.Dispose">
+            <summary>
+                Libera le risorse associate al server
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.NotifyMessage(TetSistemi.Commons.Protocol.IMessage)">
+            <summary>
+                Invia un IMessage a tutte le connessioni attive (notifica ai client)
+            </summary>
+            <param name="msg"> Messaggio da inviare ai client </param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.SendMessage(`0,TetSistemi.Commons.Protocol.IMessage)">
+            <summary>
+                Invia un IMessage alla connessione specificata
+            </summary>
+            <param name="msg"> Messaggio da inviare al client </param>
+            <param name="c">
+                <c>Connection</c> relativa al client
+            </param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.Start">
+            <summary>
+                Abilita il server
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.Stop">
+            <summary>
+                Disabilita il server
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Bin.ABaseServer`2.Disconnect">
+            <summary>
+                Disconnette tutti i client
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Bin.ABaseServer`2.Enabled">
+            <summary>
+                Indica lo stato del tcp server
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Bin.ABaseServer`2.Trace">
+            <summary>
+                Attiva o disattiva il trace su tutte le connessioni
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Bin.ABaseServer`2.LogAction">
+            <summary>
+                Permette di impostare un metodo custom che accetti come parametro una stringa (metodo di log)
+                Viene invocato dagli eventi relativi agli IMessage per visualizzare il messaggio in formato testuale
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.BeginConnect">
+            <summary>
+                Evento lanciato quando il tcp server riceve una nuova connessione
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.BeginDisconnect">
+            <summary>
+                Evento lanciato alla chiusura di una connessione
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.OnMessageReceivedGlobal">
+            <summary>
+                Evento lanciato alla ricezione di un IMessage
+            </summary>
+            <remarks>
+                E` comune a tutte le connessioni
+            </remarks>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.onDataReceivedGlobal">
+            <summary>
+                Evento lanciato alla ricezione di un byte[]
+            </summary>
+            <remarks>
+                E` comune a tutte le connessioni
+            </remarks>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.OnNotifyAnswerToMsg">
+            <summary>
+                Evento lanciato da tutte le connessioni alla ricezione di un IMessage
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.OnAnswerToMsg">
+            <summary>
+                Evento di risposta ad un IMessage verso una data connessione
+                <para> Il metodo accetta come parametro l'IMessage a cui si deve rispondere e ritorna l'IMessage di risposta </para>
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.OnNotifyMessage">
+            <summary>
+                Evento lanciato all'invio di un IMessage verso tutte le connessioni
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.OnSendMessage">
+            <summary>
+                Evento lanciato all'invio di un IMessage verso una data connessione
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.OnSendMessageSync">
+            <summary>
+                Evento lanciato in caso di invio di un messaggio sincrono, <seealso cref="!:TConnection.SendMessageSync"/>
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.OnSendMessageAsync">
+            <summary>
+                Evento lanciato in caso di invio di un messaggio asincrono, <seealso cref="!:TConnection.SendMessageAsync"/>
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.OnStart">
+            <summary>
+                Evento lanciato all'avvio del server
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Bin.ABaseServer`2.OnStop">
+            <summary>
+                Evento lanciato allo stop del server
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Xml.BaseClientFactory">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Xml.BaseClient">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseClient.RegisterTypes">
+            <summary>
+                When implemented should just call <see cref="M:Copenhagen.Commons.Net.Xml.BaseClient.RegisterType(System.Type)"/>
+                for each message implemented in the specific protocol
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseClient.RegisterType(System.Type)">
+            <summary>
+            Registers the type of <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> passed as argument
+            </summary>
+            <param name="t">the <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> to be registered</param>
+            <remarks>
+            Raises <see cref="T:System.ArgumentException"/> if the type passed is not an IMessage
+            </remarks>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseClient.CloseConnection">
+            <summary>
+            Chiude la connessione ma non disabilita il Driver
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseClient.ConnectWait(System.TimeSpan)">
+            <summary>
+            Abilita il Client TcpIp e attende la prima connessione
+            </summary>
+            <param name="connectTimeout">Imposta il timeout di attesa alla prima connessione</param>
+            <returns></returns>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseClient.WaitForConnected(System.TimeSpan)">
+            <summary>
+            Attende lo stato di connessione del socket
+            </summary>
+            <param name="connectTimeout">Imposta il timeout di attesa dello stato di connesso</param>
+            <returns></returns>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseClient.Connect(System.TimeSpan)">
+            <summary>
+            Abilita il Client TcpIp
+            </summary>
+            <param name="connectdelay">Imposta un ritardo sul primo tentativo di connessione</param>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseClient.Disconnect">
+            <summary>
+            Disabilita il Client TcpIp
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseClient.Send(System.Byte[])">
+            <summary>
+            Invia un array di bytes sul Socket
+            </summary>
+            <param name="byteToSend">Dati da inviare</param>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseClient.Trace">
+            <summary>
+                Activates <see cref="E:Copenhagen.Commons.Net.Xml.BaseClient.TraceOutput"/> and <see cref="E:Copenhagen.Commons.Net.Xml.BaseClient.TraceInput"/> events
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Xml.BaseClient.TraceOutput">
+            <summary>
+                Event fired when receiving a message
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Xml.BaseClient.TraceInput">
+            <summary>
+                Event fired when sending a message
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseClient.IsConnected">
+            <summary>
+            Ritorna lo stato di connessione del socket.
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseClient.LocalEndPoint">
+            <summary>
+            Ritorna l'end point locale del socket (null se socket non connesso)
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseClient.RemoteEndPoint">
+            <summary>
+            Ritorna l'end point remoto del socket (null se socket non connesso)
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Xml.BaseServer`1">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Xml.IMessageProcessor">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseServer`1.RegisterTypes">
+            <summary>
+                When implemented should just call <see cref="M:Copenhagen.Commons.Net.Xml.BaseServer`1.RegisterType(System.Type)"/>
+                passing the types of messages in the specific protocol
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Xml.BaseServerFactory">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Xml.BaseRedundantClientFactory">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Xml.BaseRedundantClient">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseRedundantClient.#ctor(Copenhagen.Commons.Net.Xml.BaseRedundantClientFactory,System.Object[])">
+            <summary>
+            Costruttore base per un client ridondato basato su un protocollo xml
+            </summary>
+            <param name="factory">factory</param>
+            <param name="parms">parametri da passare al factory</param>
+            <remarks>
+            prima del client viene creato il serializer del protocollo ed aggiunto in testa ai parametri passati al client factory
+            ricordarsi nell'implementazione del factory che il primo e` l'IMessageParser da passare al costruttore del 
+            TcpRedundantClient 
+            </remarks>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseRedundantClient.RegisterTypes">
+            <summary>
+                When implemented should just call <see cref="M:Copenhagen.Commons.Net.Xml.BaseRedundantClient.RegisterType(System.Type)"/>
+                for each message implemented in the specific protocol
+            </summary>
+        </member>
+        <member name="M:Copenhagen.Commons.Net.Xml.BaseRedundantClient.RegisterType(System.Type)">
+            <summary>
+            Registers the type of <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> passed as argument
+            </summary>
+            <param name="t">the <see cref="T:TetSistemi.Commons.Protocol.IMessage"/> to be registered</param>
+            <remarks>
+            Raises <see cref="T:System.ArgumentException"/> if the type passed is not an IMessage
+            </remarks>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseRedundantClient.Trace">
+            <summary>
+                Activates <see cref="E:Copenhagen.Commons.Net.Xml.BaseRedundantClient.TraceOutput"/> and <see cref="E:Copenhagen.Commons.Net.Xml.BaseRedundantClient.TraceInput"/> events
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Xml.BaseRedundantClient.TraceOutput">
+            <summary>
+                Event fired when receiving a message
+            </summary>
+        </member>
+        <member name="E:Copenhagen.Commons.Net.Xml.BaseRedundantClient.TraceInput">
+            <summary>
+                Event fired when sending a message
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseRedundantClient.IsPrimaryConnected">
+            <summary>
+            Ritorna lo stato di connessione al server primario
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseRedundantClient.IsRedundant">
+            <summary>
+            Ritorna se abilitata la ridondanza di client
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseRedundantClient.IsSecondaryConnected">
+            <summary>
+            Ritorna lo stato di connessione al server secondarion
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseRedundantClient.InfoServerPrimary">
+            <summary>
+            Ritorna le informazioni del server primary
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseRedundantClient.InfoServerSecondary">
+            <summary>
+            Ritorna le informazioni del server secondary
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseRedundantClient.PrimaryStream">
+            <summary>
+            Ritorna l'interfaccia stream del primo client tcp
+            </summary>
+        </member>
+        <member name="P:Copenhagen.Commons.Net.Xml.BaseRedundantClient.SecondaryStream">
+            <summary>
+            Ritorna l'interfaccia stream del secondo client tcp
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Net.Xml.ServerConnector">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:Copenhagen.Commons.Serialization.SerializablePair`2">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+    </members>
+</doc>

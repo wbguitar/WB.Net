@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="WB.IIIParty.Commons.Logger.LoggerConfig">
+    <Position X="2" Y="7.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAQAAAAEAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\LoggerConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Logger.LoggerManager">
+    <Position X="6.5" Y="7.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="WB.IIIParty.Commons.Logger.LoggerManager.DuplicateNameException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Logger\LoggerManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="WB.IIIParty.Commons.Logger.LoggerManager.InvalidLoggerNameException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Logger\LoggerManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="WB.IIIParty.Commons.Logger.LoggerManager.InvalidLoggerInterfaceException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Logger\LoggerManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEAAIAAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\LoggerManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WB.IIIParty.Commons.IO.Directory">
+    <Position X="1" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\IO\Directory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="WB.IIIParty.Commons.Logger.IMessageLog">
+    <Position X="9.75" Y="7.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAAAAAIAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\IMessageLog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

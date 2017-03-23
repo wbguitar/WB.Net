@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="WB.IIIParty.Commons.Net.Sockets.TcpServerConnection" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="12.25" Width="4.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="WB.IIIParty.Commons.Net.Sockets.TcpServerConnection.DisconnectEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Net\Sockets\tcp_client.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAQAASAAgEEKAAAAAAgAIAAAAAAGAAAAABAg=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\tcp_client.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Net.Sockets.TCPEventArgs">
+    <Position X="10.5" Y="9.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAIAEAAAAAAAAAAAABEAAAEAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\tcp_server.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Net.Sockets.TcpServer">
+    <Position X="5.25" Y="9.5" Width="5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="WB.IIIParty.Commons.Net.Sockets.TcpServer.ConnectEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Net\Sockets\tcp_server.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="WB.IIIParty.Commons.Net.Sockets.TcpServer.DisconnectEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Net\Sockets\tcp_server.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAMACAAA0gAAAAAJAAAAIAAAAAAIAAASAAACAg=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\tcp_server.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Net.Sockets.TcpClient" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="9.5" Width="4.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="WB.IIIParty.Commons.Net.Sockets.TcpClient.ConnectEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Net\Sockets\TcpClient.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="WB.IIIParty.Commons.Net.Sockets.TcpClient.DisconnectEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Net\Sockets\TcpClient.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="WB.IIIParty.Commons.Net.Sockets.TcpClient.SocketStateObject" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Net\Sockets\TcpClient.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAQAAIAQAKEACADESEQAALQQAgAMgBAAAAEBgAIQBAg=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\TcpClient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Net.Sockets.UdpDriver" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="15" Width="5.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAFABIqgICCBAAEAAQAASAgAKEAAAYBEAAAAAAAQ=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\UdpDriver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Net.Sockets.RedundantClientTcp" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2" Width="10" />
+    <Members>
+      <Field Name="clientPrinc" Hidden="true" />
+      <Method Name="clientPrinc_OnConnect" Hidden="true" />
+      <Method Name="clientPrinc_OnDisconnect" Hidden="true" />
+      <Method Name="clientPrinc_OnTrace" Hidden="true" />
+      <Field Name="clientSec" Hidden="true" />
+      <Method Name="clientSec_OnConnect" Hidden="true" />
+      <Method Name="clientSec_OnDisconnect" Hidden="true" />
+      <Method Name="clientSec_OnTrace" Hidden="true" />
+      <Field Name="currentConnected" Hidden="true" />
+      <Method Name="EvaluateConnectionState" Hidden="true" />
+      <Field Name="infoServerPrimary" Hidden="true" />
+      <Field Name="infoServerSecondary" Hidden="true" />
+      <Field Name="isRedundant" Hidden="true" />
+      <Field Name="strParserPrim" Hidden="true" />
+      <Method Name="strParserPrim_MessageReceived" Hidden="true" />
+      <Method Name="strParserPrim_OnMessageParseError" Hidden="true" />
+      <Field Name="strParserSec" Hidden="true" />
+      <Method Name="strParserSec_MessageReceived" Hidden="true" />
+      <Method Name="strParserSec_OnMessageParseError" Hidden="true" />
+      <Field Name="trLog" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IARMAAAIQCkAEARAAEAQRIIMAACEQAEEEIQABRBEDMA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\RedundantClientTcp.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Struct Name="WB.IIIParty.Commons.Net.Sockets.ServerInfo">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\RedundantClientTcp.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="WB.IIIParty.Commons.Net.Sockets.Servers">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\RedundantClientTcp.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="WB.IIIParty.Commons.Protocol.dDataReceived">
+    <Position X="7.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\dDataReceived.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="WB.IIIParty.Commons.Protocol.dMessageReceived">
+    <Position X="2.75" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\dMessageReceived.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="WB.IIIParty.Commons.Protocol.dOnTrace">
+    <Position X="5.25" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAEAAAAACA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\dOnTrace.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="WB.IIIParty.Commons.Protocol.dOnMessageParseError">
+    <Position X="0.5" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="WB.IIIParty.Commons.Net.Sockets.ConnectEvent">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\RedundantClientTcp.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="WB.IIIParty.Commons.Net.Sockets.DisconnectEvent">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\RedundantClientTcp.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="WB.IIIParty.Commons.Net.Sockets.ServerConnectEvent">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\RedundantClientTcp.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="WB.IIIParty.Commons.Net.Sockets.ServerDisconnectEvent">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Net\Sockets\RedundantClientTcp.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

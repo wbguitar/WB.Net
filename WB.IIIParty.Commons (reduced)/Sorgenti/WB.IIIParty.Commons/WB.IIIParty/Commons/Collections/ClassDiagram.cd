@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="WB.IIIParty.Commons.Collections.ProdConsQueueEx">
+    <Position X="0.5" Y="0.5" Width="3.75" />
+    <Members>
+      <Method Name="ConsumerThread" Hidden="true" />
+      <Method Name="Dequeue" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="WB.IIIParty.Commons.Collections.ProdConsQueueEx.dObjectDequeue" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Collections\ProdConsQueueEx.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BABAAAAAACAAQAAAEABAAAAAAAAABgAAAIAAKAEAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Collections\ProdConsQueueEx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Collections.ProdConsPriorityQueue&lt;T&gt;">
+    <Position X="0.5" Y="4" Width="3.75" />
+    <Members>
+      <Field Name="countElement" Hidden="true" />
+      <Field Name="list" Hidden="true" />
+      <Field Name="m_Semaphore" Hidden="true" />
+      <Field Name="maxElement" Hidden="true" />
+      <Field Name="orderPriorityCresc" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABAAgABACAAAAAAAAQAEAAAIAAABAAAAIAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Collections\ProdConsPriorityQueue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Collections.ProdConsQueueEx&lt;T&gt;">
+    <Position X="4.5" Y="0.5" Width="3.75" />
+    <Members>
+      <Method Name="ConsumerThread" Hidden="true" />
+      <Method Name="Dequeue" Hidden="true" />
+      <Field Name="dequeue_ris" Hidden="true" />
+      <Field Name="enqueue_ris" Hidden="true" />
+      <Field Name="m_Semaphore" Hidden="true" />
+      <Field Name="max_el" Hidden="true" />
+      <Field Name="mCallback" Hidden="true" />
+      <Field Name="mConsumerThread" Hidden="true" />
+      <Field Name="mRunning" Hidden="true" />
+      <Field Name="queue" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="WB.IIIParty.Commons.Collections.ProdConsQueueEx&lt;T&gt;.dObjectDequeue" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Collections\ProdConsQueueExGenerics.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BABAAAAAACAAQAAAEABAAAAAAAAABgAAAIAAKAEAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Collections\ProdConsQueueExGenerics.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="WB.IIIParty.Commons.Collections.EnqueueResult" Collapsed="true">
+    <Position X="4.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAgAAAAAABAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Collections\ProdConsPriorityQueue.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

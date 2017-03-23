@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04325628-3AF3-4AA6-B903-8CF04BCF4F85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WB.IIIParty.Commons</RootNamespace>
+    <AssemblyName>WB.IIIParty.Commons</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Bin\WB.IIIParty.Commons.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\Bin\WB.IIIParty.Commons.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AODL, Version=1.4.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Librerie Esterne\AODL.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.TextEditor, Version=3.0.0.3800, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Librerie Esterne\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="SerialNET, Version=1.0.3.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Librerie Esterne\SerialNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WB.IIIParty\Commons\Collections\ProdConsQueueExGenerics.cs" />
+    <Compile Include="WB.IIIParty\Commons\Collections\ProdConsPriorityQueue.cs" />
+    <Compile Include="WB.IIIParty\Commons\Collections\ProdConsQueueEx.cs" />
+    <Compile Include="WB.IIIParty\Commons\Collections\Array.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Csv\CSV.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\DbFileStore.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\NoRedundantCommandToTables\NoRedundantCommandToTables.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\NoRedundantTables\NoRedundantDatabase.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\NoRedundantTables\NoRedundantTable.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\NoRedundantTables\NoRedundantView.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\NoRedundantTables\SingleServerInfo.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\TableCompare.cs" />
+    <Compile Include="WB.IIIParty\Commons\Globalization\LanguageManager_v2.cs" />
+    <Compile Include="WB.IIIParty\Commons\Globalization\ILanguageManager.cs" />
+    <Compile Include="WB.IIIParty\Commons\Globalization\LanguageManager.cs">
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\Logger\ILoggerConfig.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\RegistryKeyChanged.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\SqlBaseLogger.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\SqlBaseLoggerConfig.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\SqlTraceLogger.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\SqlTraceLoggerConfig.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\ITraceLog.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\SqlUserAccessLogger.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\SqlUserAccessLoggerConfig.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\IUserAccessLog.cs" />
+    <Compile Include="WB.IIIParty\Commons\Media\ISoundBeepLoop.cs" />
+    <Compile Include="WB.IIIParty\Commons\Media\SoundBeepLoop.cs" />
+    <Compile Include="WB.IIIParty\Commons\Media\SoundBeepLoopWave.cs" />
+    <Compile Include="WB.IIIParty\Commons\Media\SoundLoopState.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Engine\ModbusClientEngine.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Engine\ModbusSerialMaster.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Engine\ModbusTcpIpClient.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\IModbusPoint.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\IModbusSerialLineFrame.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\ModbusEntity.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\ModbusMaster.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\ModbusPoint.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\ModbusRequest.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\ModbusResponse.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\ModbusSerialLineASCIIFrame.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\ModbusSerialLineRTUFrame.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\ModbusSettings.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Entity\ModbusSlave.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\IModbusCommunication.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\ModbusSerialMasterCommunication.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\ModbusSerialSlaveCommunication.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\ModbusTCPIPClientCommunication.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\ModbusTCPIPServerCommunication.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\PDU\ModbusPDU.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\PDU\ReadCoils.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\PDU\ReadHoldingRegisters.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\PDU\ReadInputDiscretes.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\PDU\ReadInputRegisters.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\PDU\WriteMultipleCoils.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\PDU\WriteMultipleRegisters.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Utility\SerialLineUtil.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Protocols\Modbus\Utility\TransactionIdGenerator.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Sockets\RedundantClientTcpType2.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Sockets\HTTPPostClient.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Sockets\Pinger.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Sockets\PingerStatusChangedEventArgs.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Sockets\RedundantClientTcp.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\Serialization\BinaryMessageSerializer.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\dAsyncCallback.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\Serialization\CustomMessageSerializer.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\Serialization\Exceptions\XmlSerializeException.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\Serialization\Exceptions\XmlDeserializeException.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\Serialization\Exceptions\XmlSerializerNotFoundException.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\Serialization\IXmlMessageSerializerInfo.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\Serialization\TetByteFiller.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\Serialization\XmlMessageSerializer.cs" />
+    <Compile Include="WB.IIIParty\Commons\RegistryMonitor\RegistryChangeBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\RegistryMonitor\RegistryKeyChange.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\RegistryMonitor\RegistryTreeChange.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\RegistryMonitor\RegistryValueChange.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\RegistryMonitor\WMIClasses\RegistryEvent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\RegistryMonitor\WMIClasses\RegistryKeyChangeEvent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\RegistryMonitor\WMIClasses\RegistryTreeChangeEvent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\RegistryMonitor\WMIClasses\RegistryValueChangeEvent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\TimeStamp\CustomTimeStamp.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\ICommandToTable.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\CommandToTables\CommandToTables.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\LoggerToFile.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\ConfigurationInfo.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\ConnectionStatus.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\Database.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\DataRow.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\DeleteDataRow.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\InsertDataRow.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\OperatorConvert.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\ParamsName.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\ParamTable.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\RegistryKeys.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\SelectDataRow.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\ServerInfo.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\SyncServers.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\SyncTableProcess.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\Table.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\TableType.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\TimeOutServerInfoException.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\UpdateDataRow.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTablesCommons\View.cs" />
+    <Compile Include="WB.IIIParty\Commons\Data\Sql\SyncTables\SyncTables.cs" />
+    <Compile Include="WB.IIIParty\Commons\Interfaces\IEnabler.cs" />
+    <Compile Include="WB.IIIParty\Commons\IO\Directory.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\LogLevels.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\CircularFileMessageLogger.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\CircularFileMessageLoggerConfig.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\SqlMessageLogger.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\IMessageLog.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\LoggerConfig.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\LoggerManager.cs" />
+    <Compile Include="WB.IIIParty\Commons\Logger\SqlMessageLoggerConfig.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Sockets\tcp_client.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Sockets\tcp_server.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Sockets\UdpDriver.cs" />
+    <Compile Include="WB.IIIParty\Commons\Net\Sockets\TcpClient.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\dOnTrace.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\Exceptions.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\StreamParser.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\IMessageParser.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\IMessage.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\dDataReceived.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\IStream.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\dMessageReceived.cs" />
+    <Compile Include="WB.IIIParty\Commons\Protocol\IProtocol.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WB.IIIParty\Commons\Security\Cryptography\RijndaelStringCryptography.cs" />
+    <Compile Include="WB.IIIParty\Commons\Windows\Forms\FormKeepAlive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\Windows\Forms\FormKeepAlive.Designer.cs">
+      <DependentUpon>FormKeepAlive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\Windows\Forms\KeyboardChangeLanguage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\Windows\Forms\KeyboardChangeLanguage.designer.cs">
+      <DependentUpon>KeyboardChangeLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\Windows\Forms\MultiMonitorManager.cs" />
+    <Compile Include="WB.IIIParty\Commons\Windows\Forms\PictureBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WB.IIIParty\Commons\Windows\Forms\RijndaelTextEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WB.IIIParty\Commons\Data\Csv\ClassDiagram.cd" />
+    <None Include="WB.IIIParty\Commons\Data\Sql\FileStore.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WB.IIIParty\Commons\Globalization\ClassDiagram.cd" />
+    <None Include="WB.IIIParty\Commons\Logger\ClassDiagram2.cd" />
+    <None Include="WB.IIIParty\Commons\Logger\SAMPLE_NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="WB.IIIParty\Commons\TimeStamp\TetSistemi.Commons.DateTime.cd" />
+    <None Include="WB.IIIParty\Commons\IO\ClassDiagram.cd" />
+    <None Include="WB.IIIParty\Commons\Net\Sockets\ClassDiagram.cd" />
+    <None Include="WB.IIIParty\Commons\Collections\ClassDiagram.cd" />
+    <None Include="WB.IIIParty\Commons\Data\ClassDiagram.cd" />
+    <None Include="WB.IIIParty\Commons\Interfaces\TetSistemi.Commons.Interfaces.cd" />
+    <None Include="WB.IIIParty\Commons\Logger\ClassDiagram.cd" />
+    <None Include="WB.IIIParty\Commons\Protocol\TetSistemi.Commons.Protocols.cd" />
+    <None Include="WB.IIIParty\Commons\Security\Cryptography\TetSistemi.Commons.Security.Cryptography.cd" />
+    <None Include="WB.IIIParty\Commons\Windows\Forms\TetSistemi.Commons.Windows.Forms.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WB.IIIParty\Commons\Windows\Forms\FormKeepAlive.resx">
+      <DependentUpon>FormKeepAlive.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WB.IIIParty\Commons\Windows\Forms\KeyboardChangeLanguage.resx">
+      <DependentUpon>KeyboardChangeLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

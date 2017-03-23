@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="TetSistemi.Commons.Logger.CircularFileMessageLogger" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="13.75" Width="4.25" />
+    <Members>
+      <Field Name="dimensioneMaxFile" Hidden="true" />
+      <Field Name="fileAorB" Hidden="true" />
+      <Field Name="fileConfig" Hidden="true" />
+      <Field Name="fileExt" Hidden="true" />
+      <Field Name="fileName" Hidden="true" />
+      <Field Name="fileSuffisso" Hidden="true" />
+      <Field Name="fsInfo" Hidden="true" />
+      <Field Name="fsStreamW" Hidden="true" />
+      <Field Name="logLevelFilter" Hidden="true" />
+      <Field Name="thisLock" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAEAIAAAACgCACAACAAAAAAAAAgAAAIAAGAAABIAAIA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\CircularFileMessageLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.SqlUserAccessLoggerConfig">
+    <Position X="23.5" Y="9.5" Width="10.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\SqlUserAccessLoggerConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.CircularFileMessageLoggerConfig">
+    <Position X="1" Y="4.25" Width="6.25" />
+    <Members>
+      <Field Name="fileName" Hidden="true" />
+      <Field Name="fileSize" Hidden="true" />
+      <Field Name="initialLevel" Hidden="true" />
+      <Field Name="loggerName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABCAAAAAAAIAAAAAEAAAEAAAABAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\CircularFileMessageLoggerConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.LoggerConfig">
+    <Position X="5" Y="0.5" Width="3.75" />
+    <Members>
+      <Field Name="initialLevel" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAACAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\LoggerConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.LoggerManager">
+    <Position X="5" Y="13.75" Width="2.75" />
+    <Members>
+      <Field Name="loggers" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="TetSistemi.Commons.Logger.LoggerManager.DuplicateNameException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TetSistemi\Commons\Logger\LoggerManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TetSistemi.Commons.Logger.LoggerManager.InvalidLoggerNameException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TetSistemi\Commons\Logger\LoggerManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TetSistemi.Commons.Logger.LoggerManager.InvalidLoggerInterfaceException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TetSistemi\Commons\Logger\LoggerManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEAAIAAACAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\LoggerManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.SqlBaseLogger">
+    <Position X="5.75" Y="2.5" Width="5" />
+    <Members>
+      <Field Name="columnsNameList" Hidden="true" />
+      <Field Name="commandToTable" Hidden="true" />
+      <Field Name="database" Hidden="true" />
+      <Field Name="logLevelFilter" Hidden="true" />
+      <Field Name="password" Hidden="true" />
+      <Field Name="schema" Hidden="true" />
+      <Field Name="tableName" Hidden="true" />
+      <Field Name="thisLock" Hidden="true" />
+      <Field Name="userName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABACAAAAAAAAEgABAABACAAggEAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\SqlBaseLogger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.SqlBaseLoggerConfig">
+    <Position X="23.75" Y="2.75" Width="9.75" />
+    <Members>
+      <Field Name="commandToTable" Hidden="true" />
+      <Field Name="database" Hidden="true" />
+      <Field Name="password" Hidden="true" />
+      <Field Name="schema" Hidden="true" />
+      <Field Name="tableName" Hidden="true" />
+      <Field Name="userName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABAAAAAQAAEAEAABAADAQAAAwEAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\SqlBaseLoggerConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.SqlMessageLogger">
+    <Position X="9.5" Y="7" Width="5.75" />
+    <Members>
+      <Field Name="myProcess" Hidden="true" />
+      <Field Name="processID" Hidden="true" />
+      <Field Name="randomNumber" Hidden="true" />
+      <Field Name="randomNumberObject" Hidden="true" />
+      <Field Name="valueTable" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAABAAAAAAAAAAAAAAAAAAQAAgAAIIAAAAAAAIAAgA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\SqlMessageLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.SqlMessageLoggerConfig">
+    <Position X="16.5" Y="6.75" Width="11" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\SqlMessageLoggerConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.SqlTraceLogger">
+    <Position X="1" Y="7" Width="7" />
+    <Members>
+      <Field Name="randomNumber" Hidden="true" />
+      <Field Name="randomNumberObject" Hidden="true" />
+      <Field Name="valueTable" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAgAAIAAAAAAAAAAAgA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\SqlTraceLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.SqlTraceLoggerConfig">
+    <Position X="29" Y="6.75" Width="9.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\SqlTraceLoggerConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TetSistemi.Commons.Logger.SqlUserAccessLogger">
+    <Position X="5.25" Y="9.5" Width="6" />
+    <Members>
+      <Field Name="valueTable" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\SqlUserAccessLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="TetSistemi.Commons.Logger.ILoggerConfig">
+    <Position X="8" Y="13.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\ILoggerConfig.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TetSistemi.Commons.Logger.IMessageLog">
+    <Position X="10" Y="13.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAAAAAIAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\IMessageLog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TetSistemi.Commons.Logger.ITraceLog">
+    <Position X="0.5" Y="16.25" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\ITraceLog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TetSistemi.Commons.Logger.IUserAccessLog">
+    <Position X="7.5" Y="16.25" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\IUserAccessLog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TetSistemi.Commons.Logger.TraceDirections">
+    <Position X="2" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\ITraceLog.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TetSistemi.Commons.Logger.UserAccessResults">
+    <Position X="3.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAABAEAAAAAAIAAAABAQAAAACAAAAI=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\IUserAccessLog.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TetSistemi.Commons.Logger.LogLevels">
+    <Position X="0.5" Y="17.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAAACAABAAAAAAABAAAAAAAEAAAAA=</HashCode>
+      <FileName>TetSistemi\Commons\Logger\LogLevels.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

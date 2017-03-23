@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="WB.IIIParty.Commons.Logger.CircularFileMessageLogger">
+    <Position X="10.75" Y="5.5" Width="4.5" />
+    <Members>
+      <Field Name="dimensioneMaxFile" Hidden="true" />
+      <Field Name="fileAorB" Hidden="true" />
+      <Field Name="fileConfig" Hidden="true" />
+      <Field Name="fileExt" Hidden="true" />
+      <Field Name="fileName" Hidden="true" />
+      <Field Name="fileSuffisso" Hidden="true" />
+      <Field Name="fsInfo" Hidden="true" />
+      <Field Name="fsStreamW" Hidden="true" />
+      <Field Name="logLevelFilter" Hidden="true" />
+      <Field Name="thisLock" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAEAIAAAACgCACAACAAAAAAAAAgAAAIAAGAAABIAAIA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\CircularFileMessageLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Logger.LoggerConfig">
+    <Position X="7" Y="0.5" Width="3.25" />
+    <Members>
+      <Field Name="initialLevel" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAACAAAAAAQAAAAEAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\LoggerConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Logger.LoggerManager">
+    <Position X="12.5" Y="0.5" Width="2.75" />
+    <Members>
+      <Field Name="loggers" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="WB.IIIParty.Commons.Logger.LoggerManager.DuplicateNameException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Logger\LoggerManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="WB.IIIParty.Commons.Logger.LoggerManager.InvalidLoggerNameException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Logger\LoggerManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="WB.IIIParty.Commons.Logger.LoggerManager.InvalidLoggerInterfaceException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Logger\LoggerManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEAAIAAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\LoggerManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Logger.SqlMessageLogger">
+    <Position X="0.5" Y="5.5" Width="4.5" />
+    <Members>
+      <Field Name="columnsNameList" Hidden="true" />
+      <Field Name="commandToTable" Hidden="true" />
+      <Field Name="database" Hidden="true" />
+      <Field Name="logLevelFilter" Hidden="true" />
+      <Field Name="myProcess" Hidden="true" />
+      <Field Name="password" Hidden="true" />
+      <Field Name="processID" Hidden="true" />
+      <Field Name="randomNumber" Hidden="true" />
+      <Field Name="randomNumberObject" Hidden="true" />
+      <Field Name="schema" Hidden="true" />
+      <Field Name="tableName" Hidden="true" />
+      <Field Name="thisLock" Hidden="true" />
+      <Field Name="userName" Hidden="true" />
+      <Field Name="valueTable" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAABAAAACAAAABACAAAAAAQAEgABIIBACAAggMAAgA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\SqlMessageLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Logger.SqlMessageLoggerConfig">
+    <Position X="0.5" Y="2.75" Width="9.75" />
+    <Members>
+      <Field Name="commandToTable" Hidden="true" />
+      <Field Name="database" Hidden="true" />
+      <Field Name="password" Hidden="true" />
+      <Field Name="schema" Hidden="true" />
+      <Field Name="tableName" Hidden="true" />
+      <Field Name="userName" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABAAAAAQAAEAEAABEADAQAAAwEAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\SqlMessageLoggerConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Logger.CircularFileMessageLoggerConfig">
+    <Position X="10.5" Y="2.75" Width="4.75" />
+    <Members>
+      <Field Name="fileName" Hidden="true" />
+      <Field Name="fileSize" Hidden="true" />
+      <Field Name="initialLevel" Hidden="true" />
+      <Field Name="loggerName" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABCAAAAAAAIAAAAAEAAAEAAAABAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\CircularFileMessageLoggerConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="WB.IIIParty.Commons.Logger.IMessageLog">
+    <Position X="0.5" Y="0.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAAAAAIAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\IMessageLog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

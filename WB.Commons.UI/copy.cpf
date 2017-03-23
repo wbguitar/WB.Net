@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Process Name="Cope.Comm" Enabled="true">
+    <CopyPaths>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\TCS\Copenhagen.Commons\Version 1.0\Bin\Copenhagen.Commons.dll</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\TCS\Copenhagen.Commons\Version 1.0\Bin\Copenhagen.Commons.pdb</Path>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\TCS\Copenhagen.Commons\Version 1.0\Bin\Copenhagen.Commons.XML</Path>
+    </CopyPaths>
+    <ScanPaths>
+      <Path>D:\PRJS\Bettfra_Work2\Copenhagen\TCS\Copenhagen.Commons.MVVM</Path>
+    </ScanPaths>
+    <DestPaths>
+      <Path>Librerie Esterne</Path>
+    </DestPaths>
+    <ExcludedPaths />
+  </Process>
+</Root>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="WB.IIIParty.Commons.Protocol.MessageParseException">
+    <Position X="5.25" Y="2" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Protocol.MessageValidationException">
+    <Position X="5.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Protocol.StreamParser" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="1.25" Width="4.75" />
+    <Members>
+      <Field Name="asyncMap" Hidden="true" />
+      <Method Name="DataReceived" Hidden="true" />
+      <Method Name="FireOnError" Hidden="true" />
+      <Method Name="FireOnMessageParseError" Hidden="true" />
+      <Method Name="FireOnMessageReceived" Hidden="true" />
+      <Field Name="leaning" Hidden="true" />
+      <Field Name="leaningData" Hidden="true" />
+      <Field Name="parser" Hidden="true" />
+      <Method Name="SelectCommand" Hidden="true" />
+      <Field Name="stream" Hidden="true" />
+      <Method Name="stream_DataReceived" Hidden="true" />
+      <Field Name="syncDataReceived" Hidden="true" />
+      <Field Name="syncMap" Hidden="true" />
+      <Field Name="syncTimeout" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="WB.IIIParty.Commons.Protocol.StreamParser.SyncArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Protocol\StreamParser.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="WB.IIIParty.Commons.Protocol.StreamParser.ASyncArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Protocol\StreamParser.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="WB.IIIParty.Commons.Protocol.StreamParser.dOnError" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Protocol\StreamParser.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AABAgAAAQACgEAkAQEAABAAAARCIAEAACAAACACAIAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\StreamParser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="WB.IIIParty.Commons.Protocol.IMessage">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAACAAAAAAAAAAQAAAAAAACAAAAAAAAAQAAI=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\IMessage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WB.IIIParty.Commons.Protocol.IMessageParser">
+    <Position X="2.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAgAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\IMessageParser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WB.IIIParty.Commons.Protocol.IProtocol">
+    <Position X="0.5" Y="2.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAQAAAEAAAAEAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\IProtocol.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WB.IIIParty.Commons.Protocol.IStream">
+    <Position X="0.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAgAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\IStream.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="WB.IIIParty.Commons.Protocol.TraceDirections">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\dOnTrace.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="WB.IIIParty.Commons.Protocol.dDataReceived">
+    <Position X="3.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\dDataReceived.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="WB.IIIParty.Commons.Protocol.dMessageReceived">
+    <Position X="2.75" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\dMessageReceived.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="WB.IIIParty.Commons.Protocol.dOnTrace">
+    <Position X="5.5" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAEAAAAACA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\dOnTrace.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="WB.IIIParty.Commons.Protocol.dOnMessageParseError">
+    <Position X="0.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Protocol\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

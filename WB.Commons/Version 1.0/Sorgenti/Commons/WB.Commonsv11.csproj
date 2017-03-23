@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C8FF68C-781E-40E0-BF76-F481C8D4F82A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WB.Commons</RootNamespace>
+    <AssemblyName>WB.Commons</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Bin\WB.Commons.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Bin\WB.Commons.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\Misc.cs" />
+    <Compile Include="Helpers\Regex.cs" />
+    <Compile Include="Helpers\SerializerInfo.cs" />
+    <Compile Include="Helpers\SerializerInfoExBase.cs" />
+    <Compile Include="Helpers\SortExtensions.cs" />
+    <Compile Include="Helpers\TypesLoader.cs" />
+    <Compile Include="Helpers\WCF\EmptyAction.cs" />
+    <Compile Include="Helpers\WCF\WcfHoster.cs" />
+    <Compile Include="Loggers\EventLogLogger.cs" />
+    <Compile Include="Loggers\TxtTraceLog.cs" />
+    <Compile Include="Helpers\Factory.cs" />
+    <Compile Include="Helpers\LoopWorker.cs" />
+    <Compile Include="Helpers\MessageLogDispatcher.cs" />
+    <Compile Include="Net\Bin\ABaseClient.cs" />
+    <Compile Include="Net\Bin\ABaseConnection.cs" />
+    <Compile Include="Net\Bin\ABaseRedundantClient.cs" />
+    <Compile Include="Net\Bin\ABaseServer.cs" />
+    <Compile Include="Net\Bin\Factory.cs" />
+    <Compile Include="Net\Bin\Interfaces\DefCliConfig.cs" />
+    <Compile Include="Net\Bin\Interfaces\DefSrvConfig.cs" />
+    <Compile Include="Net\Bin\Interfaces\ICliConfig.cs" />
+    <Compile Include="Net\Bin\Interfaces\IRedundantCliConfig.cs" />
+    <Compile Include="Net\Bin\Interfaces\ISrvConfig.cs" />
+    <Compile Include="Net\IClient.cs" />
+    <Compile Include="Net\Xml\BaseClientFactory.cs" />
+    <Compile Include="Net\Xml\BaseClient.cs" />
+    <Compile Include="Net\Xml\BaseServer.cs" />
+    <Compile Include="Net\Xml\BaseServerFactory.cs" />
+    <Compile Include="Net\Xml\BaseRedundantClientFactory.cs" />
+    <Compile Include="Net\Xml\BaseRedundantClient.cs" />
+    <Compile Include="Net\Xml\IClientConfig.cs" />
+    <Compile Include="Net\Xml\IMessageProcessor.cs" />
+    <Compile Include="Net\Xml\ServerConnector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization\IXmlMessageSerializerInfoEx.cs" />
+    <Compile Include="Serialization\SerializableDictionary.cs" />
+    <Compile Include="Serialization\SerializablePair.cs" />
+    <Compile Include="Serialization\Serializables.cs" />
+    <Compile Include="Serialization\XmlMessageSerializerEx.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Commons.licenseheader" />
+    <None Include="copy.cpf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\WB.IIIParty.Commons\Sorgenti\WB.IIIParty.Commons\WB.IIIParty.Commons.csproj">
+      <Project>{826603D7-A138-4AD1-94E1-DA10BBDDF25A}</Project>
+      <Name>WB.IIIParty.Commons</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>exit
+set assemblies=GalaSoft.MvvmLight.dll GalaSoft.MvvmLight.Extras.dll
+set pdbs=GalaSoft.MvvmLight.pdb GalaSoft.MvvmLight.Extras.pdb GalaSoft.MvvmLight.xml GalaSoft.MvvmLight.Extras.xml
+
+cd "$(TargetDir)"
+set tempdir=$(TargetDir)$(TargetName)TEMPDIR
+rd "%25tempdir%25" /s /q
+md "%25tempdir%25"
+
+"$(ProjectDir)ilmerge" "$(TargetName).dll" %25assemblies%25 /t:library /out:"%25tempdir%25/$(TargetName).dll" /targetplatform:v4 /xmldocs 
+
+del %25assemblies%25
+del %25pdbs%25
+del $(TargetName).dll
+del $(TargetName).pdb
+
+copy /y "%25tempdir%25\$(TargetName).dll" ".\$(TargetName).dll"
+copy /y "%25tempdir%25\$(TargetName).pdb" ".\$(TargetName).pdb"
+rd "%25tempdir%25" /s /q</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

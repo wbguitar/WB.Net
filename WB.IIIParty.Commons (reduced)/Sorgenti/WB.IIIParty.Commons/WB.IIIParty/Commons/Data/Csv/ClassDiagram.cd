@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="WB.IIIParty.Commons.Data.Csv.CSV">
+    <Position X="2.75" Y="0.75" Width="3.5" />
+    <Members>
+      <Method Name="CheckFilePath" Hidden="true" />
+      <Method Name="CheckHeader" Hidden="true" />
+      <Field Name="m_exception" Hidden="true" />
+      <Field Name="m_file" Hidden="true" />
+      <Field Name="m_filepath" Hidden="true" />
+      <Field Name="m_header" Hidden="true" />
+      <Field Name="m_IsOpen" Hidden="true" />
+      <Field Name="read" Hidden="true" />
+      <Field Name="write" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>JAAAAAAAAAABAAAIACAAAACIAEAgEEAAAQBgCAAAJBg=</HashCode>
+      <FileName>WB.IIIParty\Commons\Data\Csv\CSV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

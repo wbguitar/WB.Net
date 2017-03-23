@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Interface Name="WB.IIIParty.Commons.Logger.IUserAccessLog">
+    <Position X="0.5" Y="0.5" Width="4" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\IUserAccessLog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WB.IIIParty.Commons.Logger.ITraceLog">
+    <Position X="0.5" Y="2.25" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\ITraceLog.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="WB.IIIParty.Commons.Logger.TraceDirections">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\ITraceLog.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WB.IIIParty.Commons.Logger.UserAccessResults">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAABAEAAAAAAIAAAABAQAAAACAAAAI=</HashCode>
+      <FileName>WB.IIIParty\Commons\Logger\IUserAccessLog.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

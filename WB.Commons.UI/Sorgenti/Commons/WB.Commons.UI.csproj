@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF6DBB89-F1C1-4B94-94AC-88DA7908D373}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WB.Commons.UI</RootNamespace>
+    <AssemblyName>WB.Commons.UI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Bin\WB.Commons.UI.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\Bin\WB.Commons.UI.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\Bin\WB.Commons.UI.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\Bin\WB.Commons.UI.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Librerie Esterne\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WB.IIIParty.Commons, Version=1.24.4.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SERVER_FAILOVER - Copia\Apps\FailoverServerSync\ExtLibs\WB.IIIParty.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AckNackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AckNackForm.Designer.cs">
+      <DependentUpon>AckNackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ComboBoxItem.cs" />
+    <Compile Include="Forms\DateTimePickerEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ListViewLogger.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Log.cs" />
+    <Compile Include="Forms\LogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\LogControl.Designer.cs">
+      <DependentUpon>LogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogTracerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\LogTracerControl.Designer.cs">
+      <DependentUpon>LogTracerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Misc.cs" />
+    <Compile Include="Forms\MultiSelectTreeview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ReadOnlyRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\TcpClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TcpClientForm.Designer.cs">
+      <DependentUpon>TcpClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WebServiceClientControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\WebServiceClientControl.Designer.cs">
+      <DependentUpon>WebServiceClientControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WpfControlContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\WpfControlContainer.Designer.cs">
+      <DependentUpon>WpfControlContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WSClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WSClientForm.Designer.cs">
+      <DependentUpon>WSClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Command\RelayCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Command\RelayCommandGeneric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Extras\Command\EventToCommandVS10.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Helpers\IExecuteWithObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Helpers\WeakAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Helpers\WeakActionGeneric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\ICleanup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\DialogMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\GenericMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\IMessenger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\MessageBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\Messenger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\NotificationMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\NotificationMessageAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\NotificationMessageActionGeneric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\NotificationMessageGeneric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\NotificationMessageWithCallback.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\PropertyChangedMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Messaging\PropertyChangedMessageBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\ObservableObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\Threading\DispatcherHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GalaSoft\MvvmLight\ViewModelBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\Bin\MVVM\ClientViewModel.cs" />
+    <Compile Include="Net\Bin\MVVM\ClientViewModelLocator.cs" />
+    <Compile Include="Net\Bin\MVVM\RedundantClientViewModel.cs" />
+    <Compile Include="Net\Bin\MVVM\RedundantClientViewModelLocator.cs" />
+    <Compile Include="Net\Bin\MVVM\ServerViewModel.cs" />
+    <Compile Include="Net\Bin\MVVM\ServerViewModelLocator.cs" />
+    <Compile Include="Observables\ObservableCollectionEx.cs" />
+    <Compile Include="Observables\ObservableDictionary.cs" />
+    <Compile Include="Observables\ObservableList.cs" />
+    <Compile Include="Observables\ObservablePriorityQueue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WPF\Converters\DebugConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Commons.licenseheader" />
+    <None Include="copy.cpf" />
+    <None Include="GalaSoft\MvvmLight\Extras\GalaSoft.MvvmLight.Extras %28NET4%29.snk" />
+    <None Include="GalaSoft\MvvmLight\Extras\packages.config" />
+    <None Include="GalaSoft\MvvmLight\GalaSoft.MvvmLight %28NET4%29.snk" />
+    <None Include="GalaSoft\MvvmLight\GalaSoft.MvvmLight.FxCop" />
+    <None Include="GalaSoft\MvvmLight\Settings.StyleCop" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\AckNackForm.resx">
+      <DependentUpon>AckNackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogControl.resx">
+      <DependentUpon>LogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogTracerControl.resx">
+      <DependentUpon>LogTracerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TcpClientForm.resx">
+      <DependentUpon>TcpClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WebServiceClientControl.resx">
+      <DependentUpon>WebServiceClientControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WpfControlContainer.resx">
+      <DependentUpon>WpfControlContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WSClientForm.resx">
+      <DependentUpon>WSClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\WB.Commons\Version 1.0\Sorgenti\Commons\WB.Commons.csproj">
+      <Project>{4C8FF68C-781E-40E0-BF76-F481C8D4F82A}</Project>
+      <Name>WB.Commons</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>exit
+set assemblies=GalaSoft.MvvmLight.dll GalaSoft.MvvmLight.Extras.dll
+set pdbs=GalaSoft.MvvmLight.pdb GalaSoft.MvvmLight.Extras.pdb GalaSoft.MvvmLight.xml GalaSoft.MvvmLight.Extras.xml
+
+cd "$(TargetDir)"
+set tempdir=$(TargetDir)$(TargetName)TEMPDIR
+rd "%25tempdir%25" /s /q
+md "%25tempdir%25"
+
+"$(ProjectDir)ilmerge" "$(TargetName).dll" %25assemblies%25 /t:library /out:"%25tempdir%25/$(TargetName).dll" /targetplatform:v4 /xmldocs 
+
+del %25assemblies%25
+del %25pdbs%25
+del $(TargetName).dll
+del $(TargetName).pdb
+
+copy /y "%25tempdir%25\$(TargetName).dll" ".\$(TargetName).dll"
+copy /y "%25tempdir%25\$(TargetName).pdb" ".\$(TargetName).pdb"
+rd "%25tempdir%25" /s /q</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

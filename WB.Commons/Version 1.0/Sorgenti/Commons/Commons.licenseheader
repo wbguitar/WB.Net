@@ -1,0 +1,21 @@
+extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+// ------------------------------------------------------------------------
+// Company:					T&TSistemi s.r.l.
+// Date:					%CurrentYear%/%CurrentMonth%/%CurrentDay%, %CurrentTime%
+// Project:					11STD3562_Copenhagen_Ring
+// Developer:				Francesco Betti
+// Software Module Name:	Copenhagen.Commons.dll
+// ------------------------------------------------------------------------
+
+
+extensions: .aspx .ascx
+<%-- 
+Sample license text.
+--%>
+extensions: .vb
+'Sample license text.
+extensions:  .xml .config .xsd
+<!--
+Sample license text.
+-->

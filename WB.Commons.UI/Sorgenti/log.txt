@@ -1,0 +1,120 @@
+------------------------------------------------------------------------
+r3136 | bettfra | 2013-01-11 08:20:49 +0100 (ven, 11 gen 2013) | 1 line
+
+
+------------------------------------------------------------------------
+r3048 | bettfra | 2013-01-08 10:32:39 +0100 (mar, 08 gen 2013) | 1 line
+
+
+------------------------------------------------------------------------
+r3000 | bettfra | 2013-01-04 09:34:14 +0100 (ven, 04 gen 2013) | 1 line
+
+- aggiunto MVVM utils
+------------------------------------------------------------------------
+r2991 | bettfra | 2013-01-03 09:22:39 +0100 (gio, 03 gen 2013) | 1 line
+
+- switch a framework 3.5
+------------------------------------------------------------------------
+r2863 | bettfra | 2012-12-11 15:18:53 +0100 (mar, 11 dic 2012) | 2 lines
+
+
+
+------------------------------------------------------------------------
+r2861 | bettfra | 2012-12-11 14:53:09 +0100 (mar, 11 dic 2012) | 2 lines
+
+
+
+------------------------------------------------------------------------
+r2857 | bettfra | 2012-12-10 15:13:03 +0100 (lun, 10 dic 2012) | 2 lines
+
+- finiti e testati TcsWebService e TcsClient
+
+------------------------------------------------------------------------
+r2828 | bettfra | 2012-12-07 08:17:23 +0100 (ven, 07 dic 2012) | 1 line
+
+
+------------------------------------------------------------------------
+r2827 | bettfra | 2012-12-06 17:12:55 +0100 (gio, 06 dic 2012) | 4 lines
+
+- implementato TcsWebService
+- implementato TcsClient
+- da finire di testare
+
+------------------------------------------------------------------------
+r2805 | bettfra | 2012-12-03 17:01:50 +0100 (lun, 03 dic 2012) | 3 lines
+
+- aggiornato copenhagen.commons
+- implementato SmsClient
+
+------------------------------------------------------------------------
+r2788 | bettfra | 2012-12-03 11:29:00 +0100 (lun, 03 dic 2012) | 1 line
+
+
+------------------------------------------------------------------------
+r2785 | bettfra | 2012-12-03 11:09:22 +0100 (lun, 03 dic 2012) | 2 lines
+
+
+
+------------------------------------------------------------------------
+r2769 | bettfra | 2012-11-30 17:32:25 +0100 (ven, 30 nov 2012) | 2 lines
+
+- spostato fireonenable su ogni trigger e aggiunta dell'instant trigger relativo lato server
+
+------------------------------------------------------------------------
+r2762 | bettfra | 2012-11-30 14:08:36 +0100 (ven, 30 nov 2012) | 2 lines
+
+- aggiustato typeloader
+
+------------------------------------------------------------------------
+r2754 | bettfra | 2012-11-29 16:54:19 +0100 (gio, 29 nov 2012) | 2 lines
+
+- aggiustata serializzazione oggetto Day
+
+------------------------------------------------------------------------
+r2742 | bettfra | 2012-11-29 15:22:38 +0100 (gio, 29 nov 2012) | 2 lines
+
+- serializzazione task in xml nel db
+
+------------------------------------------------------------------------
+r2704 | bettfra | 2012-11-27 11:06:29 +0100 (mar, 27 nov 2012) | 2 lines
+
+
+
+------------------------------------------------------------------------
+r2700 | bettfra | 2012-11-26 16:18:18 +0100 (lun, 26 nov 2012) | 2 lines
+
+- load/save type senza assembly version
+
+------------------------------------------------------------------------
+r2689 | bettfra | 2012-11-26 12:28:54 +0100 (lun, 26 nov 2012) | 2 lines
+
+- aggiunto parametro fireonenable
+
+------------------------------------------------------------------------
+r2688 | bettfra | 2012-11-23 16:46:05 +0100 (ven, 23 nov 2012) | 2 lines
+
+- aggiunta funzionalita` di ricerca per fire oltre ch eper trigger
+
+------------------------------------------------------------------------
+r2680 | bettfra | 2012-11-23 09:01:49 +0100 (ven, 23 nov 2012) | 2 lines
+
+- aggiustato load/save search task pattern
+
+------------------------------------------------------------------------
+r2679 | bettfra | 2012-11-22 17:04:19 +0100 (gio, 22 nov 2012) | 4 lines
+
+- aggiunta BaseTaskSearcher<T> per implementare un searcher custom su un oggetto generico
+- aggiunta BaseJobTaskSearcher<T>, base di tasksearcher per i job
+- aggiornati controlli per la ricerca
+
+------------------------------------------------------------------------
+r2666 | bettfra | 2012-11-21 16:38:43 +0100 (mer, 21 nov 2012) | 2 lines
+
+- aggiunto parametro FireDuration nel TimeTrigger per poter tener conto nelle ricerche di job che hanno una certa durata
+
+------------------------------------------------------------------------
+r2659 | bettfra | 2012-11-21 11:34:17 +0100 (mer, 21 nov 2012) | 2 lines
+
+- spostate alcune classi di utilità in Copenhagen.Commons per poterle usare in altri progetti
+
+------------------------------------------------------------------------

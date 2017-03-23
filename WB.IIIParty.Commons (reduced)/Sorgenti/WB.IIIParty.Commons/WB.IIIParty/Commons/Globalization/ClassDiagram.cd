@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="LoggerToFile.LoggerToFile" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAACgAAAIAAAAAAAAAAAEAACAAAQAAAABAACA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Data\LoggerToFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WB.IIIParty.Commons.Globalization.LanguageManager">
+    <Position X="1.5" Y="1.25" Width="3.5" />
+    <Members>
+      <Method Name="AddTranslation" Hidden="true" />
+      <Field Name="currentLanguage" Hidden="true" />
+      <Field Name="DefaultLanguage" Hidden="true" />
+      <Field Name="FileName" Hidden="true" />
+      <Field Name="FileSize" Hidden="true" />
+      <Field Name="KeyName" Hidden="true" />
+      <Field Name="languageDictionary" Hidden="true" />
+      <Field Name="languageManager" Hidden="true" />
+      <Field Name="log" Hidden="true" />
+      <Field Name="LoggerName" Hidden="true" />
+      <Field Name="PathRegistry" Hidden="true" />
+      <Method Name="ReadCurrentLanguageFromRegistry" Hidden="true" />
+      <Method Name="WriteCurrentLanguageToRegistry" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="WB.IIIParty.Commons.Globalization.LanguageManager.TextTranslated" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Globalization\LanguageManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="WB.IIIParty.Commons.Globalization.LanguageManager.TextDefault" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Globalization\LanguageManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="WB.IIIParty.Commons.Globalization.LanguageManager.Text" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Globalization\LanguageManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="WB.IIIParty.Commons.Globalization.LanguageManager.dCurrentLanguageChanged" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Globalization\LanguageManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="WB.IIIParty.Commons.Globalization.LanguageManager.dBeforeCurrentLanguageChanged" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Globalization\LanguageManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="WB.IIIParty.Commons.Globalization.LanguageManager.dAfterCurrentLanguageChanged" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WB.IIIParty\Commons\Globalization\LanguageManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABIAhAAYACAAAQBAAAQACABAAAAAAAEAQIAUAABFUAA=</HashCode>
+      <FileName>WB.IIIParty\Commons\Globalization\LanguageManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
